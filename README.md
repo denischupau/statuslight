@@ -3,6 +3,8 @@ USB status light with 10 LEDs, to indicate status on a PC or server by blinking/
 
 I wrote it for my own use, and publish it as-is, use at your own risks.
 
+![Alt text](/statusLight02.jpg)
+
 ## What is it?
 
 The status light is based on:
