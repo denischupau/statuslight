@@ -56,7 +56,7 @@ sendUSB.py 0x42F7000066
 sendUSB.py 0x1233
 - blink LED 2 more rapidly without fadder and without changing colours
 
-#### Explanation, First byte: LED mode + LED number
+#### Explanation, First byte: what to do + LED number
 
 LED modes: (4 lower bits are the LED number)
 - 0x10   GET the properties of the LED
@@ -65,7 +65,7 @@ LED modes: (4 lower bits are the LED number)
 - 0x80   reset all states, vars, etc.
 - 0x0F   LED number to address: 0 to 9 (10 LEDs, but you can add or remove some, max 15)
 
-#### Explanation, Second byte: LADE/Blink speed + blink mode
+#### Explanation, Second byte: Fade/Blink speed + blink mode
 
 Control fading/blinking and speed:
 - 0xF0   speed from 0x0 to 0xF (0 - 15), 15 = lowest speed, big delay:
